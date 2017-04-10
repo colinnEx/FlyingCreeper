@@ -37,7 +37,7 @@ NAME=`basename "$HERE"`
 
 # 1. Compile
 echo "Compiling with javac..."
-javac -Xlint:deprecation src/*/*.java -d bin -classpath "$SPIGOT" -sourcepath src -target 1.6 -g:lines,vars,source -source 1.6 || exit 2
+javac -Xlint:deprecation src/*/*.java -d bin -classpath "$SPIGOT" -sourcepath src -target 1.8 -g:lines,vars,source -source 1.8 || exit 2
 
 # 2. Build the jar
 echo "Creating jar file..."
